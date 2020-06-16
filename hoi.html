@@ -19,14 +19,10 @@ td{
 	document.getElementById("hoihoi").innerHTML = tarasvar;
 	//alert(tarasvar);
 	}
-	function vakjevullen(){
-	var elem = document.getElementById("vakje00");
+	function vakjevullen(vakjeid){
+	var elem = document.getElementById(vakjeid);
 	elem.bgColor = 'red';
 	elem.style.border = '5px solid red';
-	optellen(4,16);
-	}
-	function optellen(x, y){ console.log(x);
-	console.log(x+y);
 	}
 </script>
 
@@ -38,8 +34,8 @@ Geef uw naam:
 Welkom: <b id="hoihoi"> vul je naam in </b>
 
 <table>
-<tr><td id="vakje00" onclick=vakjevullen() ></td><td id="vakje10" ></td></tr>
-<tr><td id="vakje10" ></td><td id="vakje11"> </td></tr>
+<tr><td id="vakje00" onclick=vakjevullen("vakje00") ></td><td id="vakje10" onclick=vakjevullen("vakje10") ></td></tr>
+<tr><td id="vakje01" onclick=vakjevullen("vakje01") ></td><td id="vakje11" onclick=vakjevullen("vakje11")> </td></tr>
 </table>
 </html>
 
