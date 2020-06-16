@@ -1,41 +1,22 @@
 <html>
-<!-- css -->
+<head>
 <style>
-b{
-background-color : red; 
-font-size: 21px;
-}
-td{
-		border: 2px solid blue;
-   		width: 30px;
-		height:30px;
-	}
-</style>
 
-<!-- javascript -->
+</style>
 <script>
-	function tarasfunctie(){ 
-	var tarasvar = document.getElementById("ingevoerd").value;
-	document.getElementById("hoihoi").innerHTML = tarasvar;
-	//alert(tarasvar);
+var mijngetal=0	
+function rood(){
+	mijngetal++;
+	if( mijngetal %2 == 0) {
+	console.log("Ik ben geel") 
+	} else {
+	console.log("Ik ben rood")
 	}
-	function vakjevullen(vakjeid){
-	var elem = document.getElementById(vakjeid);
-	elem.bgColor = 'red';
-	elem.style.border = '5px solid red';
 	}
 </script>
-
-
-Geef uw naam:
-<input type=text id="ingevoerd">
-<input type=button value="Klik maar" onclick=tarasfunctie()>
-
-Welkom: <b id="hoihoi"> vul je naam in </b>
-
-<table>
-<tr><td id="vakje00" onclick=vakjevullen("vakje00") ></td><td id="vakje10" onclick=vakjevullen("vakje10") ></td></tr>
-<tr><td id="vakje01" onclick=vakjevullen("vakje01") ></td><td id="vakje11" onclick=vakjevullen("vakje11")> </td></tr>
-</table>
+</head>
+<body>
+	<input type="button" onclick=rood() value="Kijk mij!">
+</body>
 </html>
 
