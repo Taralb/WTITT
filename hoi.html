@@ -1,3 +1,34 @@
-hoi
+<!-- css -->
+<style>
+b{
+background-color : red; 
+font-size: 21px;
+}
+td{
+		border: 2px solid blue;
+   		width: 30px;
+		height:30px;
+	}
+</style>
 
-Meerdere statements
+<!-- javascript -->
+<script>
+function tarasfunctie(){ 
+var tarasvar = document.getElementById("ingevoerd").value;
+document.getElementById("hoihoi").innerHTML = tarasvar;
+//alert(tarasvar);
+}
+</script>
+
+
+Geef uw naam:
+<input type=text id="ingevoerd">
+<input type=button value="Klik maar" onclick=tarasfunctie()>
+
+Welkom: <b id="hoihoi"> vul je naam in </b>
+
+<table>
+<tr><td></td></tr>
+</table>
+
+
