@@ -20,11 +20,13 @@ td{
 	//alert(tarasvar);
 	}
 	function vakjevullen(){
-	var deDOM = document.getElementsByTagName("html");
-	console.log(deDOM);
-	alert(deDOM[0].baseURI);
 	var elem = document.getElementById("vakje00");
 	elem.bgColor = 'red';
+	elem.style.border = '5px solid red';
+	optellen(4,16);
+	}
+	function optellen(x, y){ console.log(x);
+	console.log(x+y);
 	}
 </script>
 
