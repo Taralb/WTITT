@@ -1,3 +1,4 @@
+<html>
 <!-- css -->
 <style>
 b{
@@ -13,11 +14,18 @@ td{
 
 <!-- javascript -->
 <script>
-function tarasfunctie(){ 
-var tarasvar = document.getElementById("ingevoerd").value;
-document.getElementById("hoihoi").innerHTML = tarasvar;
-//alert(tarasvar);
-}
+	function tarasfunctie(){ 
+	var tarasvar = document.getElementById("ingevoerd").value;
+	document.getElementById("hoihoi").innerHTML = tarasvar;
+	//alert(tarasvar);
+	}
+	function vakjevullen(){
+	var deDOM = document.getElementsByTagName("html");
+	console.log(deDOM);
+	alert(deDOM[0].baseURI);
+	var elem = document.getElementById("vakje00");
+	elem.bgColor = 'red';
+	}
 </script>
 
 
@@ -28,7 +36,8 @@ Geef uw naam:
 Welkom: <b id="hoihoi"> vul je naam in </b>
 
 <table>
-<tr><td></td></tr>
+<tr><td id="vakje00" onclick=vakjevullen() ></td><td id="vakje10" ></td></tr>
+<tr><td id="vakje10" ></td><td id="vakje11"> </td></tr>
 </table>
-
+</html>
 
