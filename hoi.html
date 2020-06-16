@@ -4,19 +4,18 @@
 
 </style>
 <script>
-var mijngetal=0	
-function rood(){
-	mijngetal++;
-	if( mijngetal %2 == 0) {
-	console.log("Ik ben geel") 
-	} else {
-	console.log("Ik ben rood")
+function start(){
+	var invoer = document.getElementById("ingevoerd").value;
+	for(var x = 0; x <= invoer; x++){
+		console.log("hoppa"+x);
 	}
-	}
+}
+
 </script>
 </head>
 <body>
-	<input type="button" onclick=rood() value="Kijk mij!">
+Tel tot: <input type="number" id="ingevoerd">
+<input type="button" onclick=start() value="Kijk mij!">
 </body>
 </html>
 
